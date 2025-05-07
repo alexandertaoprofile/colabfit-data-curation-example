@@ -1,0 +1,388 @@
+overall clarification
+	the property definition's last definition is name field, correspond to property map first line
+
+overall question:
+	difference between description and all regex
+
+overall trick:
+unzip 7z: 7z x filename
+unzip gz: g smdx
+stop excute: ctrl c
+
+
+
+
+JCP, CMS
+
+abberivation of the journal
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+BA10-18: Problem constructing formation energy map, else good. metadata checked,  formation energy checked		 			under review						review	pending
+
+W-14: assume virial refers to stress, else good. metadata checked											                under review						review	pending
+
+QM9x: Trouble getting reader function to work, else good. metadata commented.  									            under review						review	pending
+
+NMD-18：reformat needed. fixed, but need comment.  Reformat completed.   Al2O3, Ga2O3, and In2O3 what is that 	     		under review    only relaxed one			review	pending
+
+PtNi_alloy_dft_Han															    			under review (ideal to find some cs regex)	review	pending
+
+
+tmQM: energies are stored in csv file, descrption to be modified.  											have some problem, fix later			file too large
+
+	pymongo.errors.DocumentTooLarge: BSON document too large (21743189 bytes) - the connected server supports BSON document sizes up to 16777216 bytes.
+
+
+CHON: free energy definition, cs_regex name, runs													under review (ideal to find some cs regex)	review	pending
+
+TiO2: cs_regex name, runs														        			under review (ideal to find some cs regex)	review	pending
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Solvated_protein  /large_data/new_raw_datasets/Solvated_protein_UnkeOliverMeuwly/solvated_protein_fragments.npz 			type error	metadata finished
+
+ERROR(@check_optional_key_source_value_scalar): input to the function doesn't comply with the defined variable type.
+The variable type can be one of ::
+"string", "float", "int", "bool", or "file".
+
+ERROR(@check_instance_optional_key_map): in property instance key = "charge"
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+sGDML																				
+	unzip?
+	which are separated																										
+
+benzene2018_dft_FHI-aims:													under review								pending
+	/large_data/new_raw_datasets/sGDML
+
+aspirin_ccsd																under review								pending
+	aspirin_ccsd-test.xyz
+	aspirin_ccsd-train.xyz
+
+benzene_ccsdt														    	under review								pending
+	benzene_ccsd_t-test.xyz
+	benzene_ccsd_t-train.xyz
+
+malonaldehyde_ccsdt															under review								pending
+	malonaldehyde_ccsd_t-test.xyz
+	malonaldehyde_ccsd_t-train.xyz
+
+toluene_ccsdt																under review			   					pending
+	toluene_ccsd_t-test.xyz
+	toluene_ccsd_t-train.xyz
+
+ethanol_ccsdt																under review								pending
+	ethanol_ccsd_t-test.xyz
+	ethanol_ccsd_t-train.xyz
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ti:Mo_alloys_SilvaAndrea													under review						review	pending
+	CONTCAR
+	/large_data/new_raw_datasets/Ti:Mo_alloys_SilvaAndrea/dataset
+ 	CE_ML_1H   CE_ML_1T   CE_bulk_1T   CE_bulk_2H
+	The DFT calculations are performed using VASP 5.4.3 compiled with intel MPI and Intel MKL support. Details on the calculations are reported in the manuscript and each folder contains the INCAR file used.
+	bulk systems  2H phase system,
+
+
+
+SN2																				metadata finished				rush
+/large_data/new_raw_datasets/SN2_UnkeOliverMeuwly
+pymongo.errors.OperationFailure: BSONObj size: 24768581 (0x179F045) is invalid. Size must be between 0 and 16793600(16MB) First element: q: { hash: "1648464328262968093" }, full error: {'ok': 0.0, 'errmsg': 'BSONObj size: 24768581 (0x179F045) is invalid. Size must be between 0 and 16793600(16MB) First element: q: { hash: "1648464328262968093" }', 'code': 10334, 'codeName': 'BSONObjectTooLarge'}
+pymongo.errors.DocumentTooLarge: BSON document too large (24656741 bytes) - the connected server supports BSON document sizes up to 16777216 bytes.
+
+
+
+Carbon_GAP_20															under review (whether include both)				  	pending
+/large_data/new_raw_datasets/Carbon_GAP_20/Carbon_GAP_20
+Carbon_Data_Set_Total.xyz  Carbon_GAP_20_Training_Set.xyz
+config_type energy kpoints kpoints_density  virial cutoff nneightol force
+
+Amorphous_Bulk  Crystalline_RSS  
+
+
+ani-al																under review (total configuration is weird)				pending
+/large_data/new_raw_datasets/ani-al/ani-al-master/data/data-12.h5
+/large_data/new_raw_datasets/ani-al/ani-al-master/readers/lib
+anidataloader
+
+
+check readerfunction :/colabfit/data/data/AL_Al/pyanitools.py											asking (fine)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Azobenzene																under review								pending
+/large_data/new_raw_datasets/sGDML/azobenzene.xyz
+
+Paracetamol																under review								pending
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MD22																				
+/large_data/new_raw_datasets/md_22	
+
+	Ac-Ala3-NHMe
+md22_Ac-Ala3-NHMe.xyz
+
+	double-walled_nanotube
+md22_double-walled_nanotube.xyz
+
+	md22_DHA.xyz
+md22_DHA.xyz
+
+
+	md22_stachyose.xyz
+md22_stachyose.xyz
+
+
+	md22_AT-AT.xyz
+md22_AT-AT.xyz
+
+	md22_AT-AT-CG-CG.xyz
+md22_AT-AT-CG-CG.xyz
+
+	md22_buckyball-catcher.xyz
+md22_buckyball-catcher.xyz
+
+
+pymongo.errors.DocumentTooLarge: BSON document too large (18251850 bytes) - the connected server supports BSON document sizes up to 16777216 bytes.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Transition1x															Killed	meta finished
+	/large_data/new_raw_datasets/Transition1x 
+	/large_data/new_raw_datasets/Transition1x/dataloader.py
+	Dataloader
+
+ANI1x
+	/large_data/new_raw_datasets/ANI1x									killed	meta finished
+
+
+ANI-1cxx																meta about finished
+
+TypeError: unhashable type: 'numpy.ndarray'
+
+
+rmd17																	under review
+/large_data/new_raw_datasets/rmd17/rmd17/npz_data
+rmd17_malonaldehyde.npz  rmd17_paracetamol.npz  rmd17_salicylic.npz  rmd17_uracil.npz
+
+/large_data/new_raw_datasets/rmd17
+
+numbers=z[i,:n]
+
+rmd17_malonaldehyde.npz   rmd17_paracetamol.npz  rmd17_salicylic.npz rmd17_uracil.npz
+rmd17_aspirin.npz   rmd17_benzene.npz    
+rmd17_toluene.npz
+rmd17_azobenzene.npz  rmd17_ethanol.npz  rmd17_naphthalene.npz      
+
+pymongo.errors.OperationFailure: BSONObj size: 31405975 (0x1DF3797) is invalid. Size must be between 0 and 16793600(16MB) First element: q: { hash: "1648464328262968093" }, full error: {'ok': 0.0, 'errmsg': 'BSONObj size: 31405975 (0x1DF3797) is invalid. Size must be between 0 and 16793600(16MB) First element: q: { hash: "1648464328262968093" }', 'code': 10334, 'codeName': 'BSONObjectTooLarge'}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+a-AlOx																		 finished						under review
+/large_data/new_raw_datasets_2.0/a-AlOx/train.xyz							41k training + 120 reference need to check
+forces energy
+additional.xyz  train.xyz
+
+
+
+benzene, succinic acid, and glycine																	under review
+/large_data/new_raw_datasets_2.0/benzene_succinic_acid_glycine						finished
+
+benzene_test_AIMS_PBE0_MBD.xyz
+benzene_train_FPS_AIMS_PBE0_MBD.xyz
+benzene_val_AIMS_PBE0_MBD.xyz
+
+glycine_test_AIMS_PBE0_MBD.xyz
+glycine_train_FPS_AIMS_PBE0_MBD.xyz
+glycine_val_AIMS_PBE0_MBD.xyz
+
+succinic_acid_test_AIMS_PBE0_MBD.xyz
+succinic_acid_train_FPS_AIMS_PBE0_MBD.xyz
+succinic_acid_val_AIMS_PBE0_MBD.xyz
+
+benzene_test_QE_PBE_TS.xyz
+benzene_train_FPS_QE_PBE_TS.xyz
+benzene_val_QE_PBE_TS.xyz
+
+glycine_test_QE_PBE_TS.xyz
+glycine_train_FPS_QE_PBE_TS.xyz
+glycine_val_QE_PBE_TS.xyz
+
+succinic_acid_test_QE_PBE_TS.xyz
+succinic_acid_train_FPS_QE_PBE_TS.xyz
+succinic_acid_val_QE_PBE_TS.xyz
+
+
+Machine_Learning_Force_Fields										finished			under review
+/large_data/new_raw_datasets_2.0/Machine_Learning_Force_Fields/supplemental/qm_reference_datafiles
+
+/large_data/new_raw_datasets_2.0/Machine_Learning_Force_Fields/supplemental/qm_reference_datafiles/DatasetA
+bcc_large.xyz  bulk_1250K.xyz  fcc_large.xyz
+
+/large_data/new_raw_datasets_2.0/Machine_Learning_Force_Fields/supplemental/qm_reference_datafiles/DatasetB
+
+/large_data/new_raw_datasets_2.0/Machine_Learning_Force_Fields/supplemental/qm_reference_datafiles/DatasetC
+
+
+HME21														finished 			but shift energy
+/large_data/new_raw_datasets_2.0/HME21
+
+HME_2.0test.xyz  HME_2.0train.xyz  HME_2.0val.xyz  README  vasp_shift_energies.json
+
+
+Crystals															metadata finished,  11489*6?
+
+/large_data/new_raw_datasets_2.0/Crystals/crystal_dataset.hdf5
+
+  |- 'z' : Number of molecules in the unit cell										2	4
+    |- 'elements': Atomic elements symbols of the unit cell (N)								[b'C' b'C' b'H' b'C' b'H' b'C' b'H' b'C' b'H' b'H' b'C' b'C' b'H' b'H'...
+    |- 'elements_monomer': Atomic elements symbols of the molecule (N)						[b'C' b'C' b'H' b'C' b'H' b'C' b'H' b'C' b'H
+    |- 'coordinates': Coordinates of the atoms in the unit cell [Angstrom], (5xNx3)					[[[ 2.2511003  -0.47935507  4.219326  ]
+    |- 'coordinates_monomer': Coordinates of the atoms of the isolated molecule [Angstrom], (5xNx3)		[[-4.0401086e-01  4.5299298e-01  2.1408665e+00]
+    |- 'cells': Vectors defining the unit cell [Angstrom], (5xNx3)								[[[ 5.833855   0.         0.       ]
+    |- 'total_energies': Total energy of the unit cell (V_uc) [kJ/mol], (5)							[-1029594.4382163  -1029837.88411011 -1029877.75569116 -1029810.91696328 -1029738.04640011]
+    |- 'intermolecular_energy': Intermolecular energy (V_uc / z - V_mono) [kJ/mol], (5)				[ -65.43314057 -308.87903438 -348.75061543 -281.91188754 -209.04132438]
+    |- 'total_energy_monomer': Total energy of the isolated molecule (V_uc) [kJ/mol], (1)				-514764.50253786694
+    
+
+OrbNet													               under review
+/large_data/new_raw_datasets_2.0/OrbNet_Denali/xyz_files/CHEMBL299825_conformers/1397e8c0348fb8c71a84225c47332c7026c9aaf909df469f7783f56eba80028e.xyz
+
+/large_data/new_raw_datasets_2.0/OrbNet_Denali/xyz_files/*/*.xyz
+
+/large_data/new_raw_datasets_2.0/OrbNet_Denali/denali_labels.csv							
+
+
+Co_dimer														finished check meta			under review
+/large_data/new_raw_datasets_2.0/Co_dimer/Co_dimer_data/Co_dimer_data.csv  Co_dimer_data_all.csv	
+
+/large_data/new_raw_datasets_2.0/Co_dimer/Co_dimer_data/structures_xyz
+
+
+----------------------------------------------------------
+/alexander_ani-al.py   more properties							added, configuration slightly off		previous datasets
+
+Jnames
+cell
+coordinates
+energy
+fermi
+force
+species
+-------------------------------------------------------
+
+BCC_Iron  Fe_22												different k-spacing-description		under review
+use config name
+
+
+Silica													    stress werid, stress units 			done
+																    	waiting for the units 
+config_type
+virials
+energy
+stress
+free_energy
+
+
+plantium															
+/large_data/new_raw_datasets_2.0/NP-DB/NP-DB01.xyz     NP-DB02.xyz		stress  unit?	local energy?			need to check if it's dft
+forces:R:3:local_energy 
+energy
+virial
+stress
+
+
+q-AQUA																					done			under review
+/large_data/new_raw_datasets_2.0/q-AQUA   2b_data-reformatted.xyz  3b_data-reformatted.xyz  4b_data-reformatted.xyz
+energy
+
+2b_data-reformatted.xyz  3b_data-reformatted.xyz  4b_data-reformatted.xyz
+
+	
+water																						done,  Totenergy
+/large_data/new_raw_datasets_2.0/bulk_water/dataset_1593.xyz	
+TotEnergy
+force
+nneightol
+
+
+Iron Fe nanoparticles												   finished, unit for stress unclear
+/large_data/new_raw_datasets_2.0/Iron_nanoparticle/convex_hull.xyz
+magnetic_moments
+forces
+virial
+energy
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+retrain																				not sure which datasets to ingest, waiting for Eric's instruction
+/large_data/new_raw_datasets_2.0/LML-retrain  bulk_MD_test.xyz  bulk_MD_train.xyz  vac_MD_test.xyz  vac_MD_train.xyz
+energy
+free_energy
+Temperature
+momenta
+forces
+stress
+
+nenci2021																	reformated, not enough values to unpack     #more cs_info to be updated
+/large_data/new_raw_datasets_2.0/nenci2021/nenci2021/xyzfiles
+
+The comment line (line 2) for each .xyz file contains the following quantities in order, with energies reported in kcal/mol:
+Dimer charge, Dimer multiplicity, Momomer A charge, Monomer A multiplicity, Momomer B charge, Monomer B multiplicity, # of atoms in Monomer A,
+# of atoms in Monomer B, CCSD(T)/CBS,   CCSD(T)/haTZ,   MP2/haTZ,   MP2/CBS,   MP2/aTZ,   MP2/aQZ,   HF/haTZ,   HF/aTZ,   HF/aQZ,   SAPT2+/aDZ Tot,
+
+SAPT2+/aDZ Elst,   SAPT2+/aDZ Exch,   SAPT2+/aDZ Ind,   SAPT2+/aDZ Disp
+
+python reformatxyz.py
+['-1', '', '1', '-1', '', '1', '', '0', '', '1', '', '', '1', '', '11', '', '1.86728', '', '2.01980', '', '1.76489', '', '1.61236', '', '1.73373',
+ '', '1.65831', '', '5.18410', '', '5.17977', '', '5.16731', '', '1.50802', '', '4.23542', '', '4.51330', '-4.38355', '-2.85715\n']
+
+/large_data/new_raw_datasets_2.0/nenci2021/nenci2021/xyzfiles/reformat/141_Cl-pyridine_A_z_-30_1.10_reformat.xyz
+
+C, N, and O  F, Cl, and Br S and P Li+ and Na
+
+
+WS22																	 need to fix the reader function, metadata finished
+
+/large_data/new_raw_datasets_2.0/WS22_database
+
+ README.md                      'ws22_dmabn.npz?download=1'        'ws22_sma.npz?download=1'      'ws22_urea.npz?download=1'
+'ws22_acrolein.npz'  'ws22_nitrophenol.npz?download=1'  'ws22_thymine.npz?download=1'  'ws22_urocanic.npz?download=1'
+'ws22_alanine.npz?download=1'   'ws22_o-hbdi.npz?download=1'       'ws22_toluene.npz?download=1'
+
+Z 	(n_atoms, ) 	Atomic numbers of nuclei 	
+R 	(120000, n_atoms, 3) 	Cartesian coordinates 	Angstrom [A]
+E 	(120000, 1) 	Potential energy 	kilocalories per mol [kcal/mol]
+F 	(120000, n_atoms, 3) 	Atomic forces 	kilocalories per mol per Angstrom [kcal/mol/A]
+Q 	(120000, n_atoms, 1) 	Mulliken charges 	elementary charge [e]
+P 	(120000, 6) 	Isotropic polarizability 	Bohr cubed [Bohr^3]
+DP 	(120000, 3) 	Dipole moment vectors 	Debye [D]
+QP 	(120000, 3, 3) 	Quadrupole moment matrix 	Debye-Angstrom [DA]
+RC 	(120000, 3) 	Rotational constants 	gigahertz [GHz]
+HL 	(120000, 2) 	HOMO and LUMO energies 	electronvolt [eV]
+R2 	(120000, 1) 	Electronic spatial extent 	Bohr squared [Bohr^2]
+CONF 	(120000, 1) 	String identifier of conformations
+
+
+
+Glycine Azobenzene flexible molecules									in progress     no operation to execute
+/large_data/new_raw_datasets_2.0/flexible_molecules/Datasets/ Azobenzene_inversion.xyz  Azobenzene_rotation.xyz  Azobenzene_rotation_and_inversion.xyz  Glycine.xyz
+
+
+methane																      in progress		script in gh
+/large_data/new_raw_datasets_2.0/methane/methane.extxyz
+                                                                            BrokenPipeError: [Errno 32] Broken pipe)
+
+
+Coll																		in progress     script in gh
+/large_data/new_raw_datasets_2.0/Coll  Coll_test.xyz  Coll_train.xyz  Coll_validation.xyz
+energy atomization_energy
+
+
+1000water		1645 row
+                                                                       /large_data/new_raw_datasets_2.0/Ice_Water  dataset_1000_eVAng.xyz
+
+
+BingqingCheng	bunch of datasets
+
+
+Graphene Grain Boundaries
+https://www.sciencedirect.com/science/article/pii/S2667056923000159#sec0014	Small-data-based machine learning interatomic potentials for graphene grain boundaries enabled by structural unit model			https://data.mendeley.com/datasets/spbfc6ztzb/1		energy, forces		xyz
