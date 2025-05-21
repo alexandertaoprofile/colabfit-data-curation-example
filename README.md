@@ -1,1 +1,1 @@
-a repository to store colabfit_script
+a repository to store Colabfit script
