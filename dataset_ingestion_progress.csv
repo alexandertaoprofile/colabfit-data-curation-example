@@ -1,0 +1,49 @@
+Dataset,Path,Status,Blocker,Notes,Suggested Action,Priority
+BA10-18,,under review,Problem constructing formation energy map,"metadata checked, formation energy checked",Fix formation-energy mapping; re-check scripts,High
+W-14,,under review,Clarify virial -> stress units,metadata checked,Confirm units and update property_map,Medium
+QM9x,,under review,Reader function failing,metadata commented,Debug reader with small sample; add unit tests,High
+NMD-18,,reformat completed / review,Only relaxed subset ingested,reformat needed and fixed,Document subset coverage; ingest remaining if available,Medium
+PtNi_alloy_dft_Han,,under review,Need cs_regex grouping,,Define cs_regex rules to group configs,Low
+tmQM,,file too large,CSV energies; DocumentTooLarge on insert,energies in CSV separate,Store large arrays externally (GridFS/ObjectStore) or split docs,High
+CHON,,under review,free energy definition and cs_regex needed,runs exist,Define property_map for free energy and cs_regex,Medium
+TiO2,,under review,"cs_regex name, runs",,Decide cs_regex and ingest,Low
+Solvated_protein,/large_data/new_raw_datasets/Solvated_protein_UnkeOliverMeuwly/solvated_protein_fragments.npz,type error,property type mismatch (charge),ERROR @check_optional_key_source_value_scalar,Validate types; adjust schema for 'charge' field,High
+sGDML (benzene2018_dft_FHI-aims),/large_data/new_raw_datasets/sGDML,under review,,,Finalize reader / metadata,Medium
+aspirin_ccsd,,under review,,aspirin_ccsd-test/train.xyz,ingest with existing xyz reader,Low
+benzene_ccsdt,,under review,,train/test files present,ingest and validate energies,Low
+malonaldehyde_ccsdt,,under review,,train/test files present,ingest and validate,Low
+toluene_ccsdt,,under review,,train/test files present,ingest and validate,Low
+ethanol_ccsdt,,under review,,train/test files present,ingest and validate,Low
+Ti:Mo_alloys_SilvaAndrea,/large_data/new_raw_datasets/Ti:Mo_alloys_SilvaAndrea/dataset,under review,need grouping and CE files review,VASP INCAR present,Define dataset mapping; ingest per-folder,Medium
+SN2,/large_data/new_raw_datasets/SN2_UnkeOliverMeuwly,metadata finished / rush,DocumentTooLarge/BSON limit on insert,pymongo DocumentTooLarge errors,Chunk large records or use object store for arrays,High
+Carbon_GAP_20,/large_data/new_raw_datasets/Carbon_GAP_20,under review,whether to include both sets,multiple xyz files available,Decide inclusion policy; ingest selected sets,Low
+Amorphous_Bulk / Crystalline_RSS,,,,subsets exist,clarify intended subsets and ingest,Low
+ani-al,/large_data/new_raw_datasets/ani-al/ani-al-master/data/data-12.h5,under review,total configuration structure weird,h5 reader required,Use h5 reader; test on sample,Medium
+Azobenzene,/large_data/new_raw_datasets/sGDML/azobenzene.xyz,under review,,,ingest with xyz reader,Low
+Paracetamol,,under review,,,ingest and validate,Low
+MD22 (multiple),/large_data/new_raw_datasets/md_22,in progress,DocumentTooLarge for some files,many xyz files,Stream reader; chunk large files,High
+Transition1x,/large_data/new_raw_datasets/Transition1x,meta finished / Killed,process killed,dataloader.py available,Restart ingestion with batching,Medium
+ANI1x,/large_data/new_raw_datasets/ANI1x,killed / meta finished,killed process,large dataset,use streaming ingestion,High
+ANI-1cxx,,meta about finished,,,finalize metadata and insert,Low
+rmd17,/large_data/new_raw_datasets/rmd17/rmd17/npz_data,under review,BSON size / TypeError 'unhashable ndarray',many npz files,store arrays externally; avoid storing numpy arrays directly in doc,High
+a-AlOx,/large_data/new_raw_datasets_2.0/a-AlOx/train.xyz,finished / under review,need check references,41k training + 120 reference,verify forces/energies and finalize,Low
+benzene_succinic_acid_glycine,/large_data/new_raw_datasets_2.0/benzene_succinic_acid_glycine,under review,,multiple train/val/test variants,ingest and document sources,Low
+Machine_Learning_Force_Fields (MLFF),/large_data/new_raw_datasets_2.0/Machine_Learning_Force_Fields/supplemental/qm_reference_datafiles,finished / under review,,DatasetA/B/C present,ready for release after final checks,Low
+HME21,/large_data/new_raw_datasets_2.0/HME21,finished,energy shift,has README and vasp_shift_energies.json,apply energy shift correction documented,Low
+Crystals (HDF5),/large_data/new_raw_datasets_2.0/Crystals/crystal_dataset.hdf5,metadata finished,map fields to property_map,HDF5 structure documented,implement HDF5 reader and unit normalization,Medium
+OrbNet_Denali,/large_data/new_raw_datasets_2.0/OrbNet_Denali,under review,large files; streaming recommended,denali_labels.csv + xyz_files,use streaming reader and validate units,High
+Co_dimer,/large_data/new_raw_datasets_2.0/Co_dimer/Co_dimer_data,finished check meta / under review,,csv and structures_xyz available,finalize dataset entry,Low
+BCC_Iron Fe_22,,under review,different k-spacing description,use config name,standardize k-point metadata,Medium
+Silica,,done / waiting units,stress units unclear,"has virials, energy, stress",confirm stress units and document,Medium
+plantium (NP-DB),/large_data/new_raw_datasets_2.0/NP-DB/,under review,stress unit? local energy?,NP-DB01/02.xyz,confirm DFT origin and units,Medium
+q-AQUA,/large_data/new_raw_datasets_2.0/q-AQUA,done / under review,,2b/3b/4b reformat files,final checks,Low
+water (bulk),/large_data/new_raw_datasets_2.0/bulk_water/dataset_1593.xyz,done,Totenergy name consistency,TotEnergy present,standardize energy field name,Low
+Iron_nanoparticle,/large_data/new_raw_datasets_2.0/Iron_nanoparticle/convex_hull.xyz,finished,stress unit unclear,magnetic_moments present,confirm stress units,Low
+retrain (LML-retrain),/large_data/new_raw_datasets_2.0/LML-retrain,not sure,waiting instruction,multiple MD train/test files,ask Eric which datasets to ingest,Low
+nenci2021,/large_data/new_raw_datasets_2.0/nenci2021/nenci2021/xyzfiles,reformatted,not enough values to unpack / cs_info update needed,comment line contains many energy columns,adjust parser for metadata tokens and update cs_info,Medium
+WS22 subsets,/large_data/new_raw_datasets_2.0/WS22_database,metadata finished,reader function needs fix,large npz arrays with shapes documented,implement generator reader and unit conversion,High
+Glycine/Azobenzene flexible molecules,/large_data/new_raw_datasets_2.0/flexible_molecules/Datasets,in progress,no operation executed,xyz files present,ingest using xyz reader after check,Low
+methane,/large_data/new_raw_datasets_2.0/methane/methane.extxyz,in progress,BrokenPipeError during insert,script in GH,use batch insert with retries and backoff,Medium
+Coll (molecular collisions),/large_data/new_raw_datasets_2.0/Coll,in progress,,test/train/validation xyz present,"ingest with existing pipeline, add properties atomization_energy",Low
+1000water (Ice_Water),/large_data/new_raw_datasets_2.0/Ice_Water/dataset_1000_eVAng.xyz,,,1645 row,ingest and validate units,Low
+Graphene Grain Boundaries (BingqingCheng),https://data.mendeley.com/datasets/spbfc6ztzb/1,to ingest,,paper and data available,download and ingest via xyz reader,Low
